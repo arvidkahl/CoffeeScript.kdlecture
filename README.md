@@ -33,11 +33,22 @@ The main file of a Koding Lecture is the `manifest.json` file. You will find an 
 - `lectures`: An array of objects, each representing a `Lecture` 
 
 ### Lecture level values
+#### General Information
 - `title`: The title of the Lecture. It is wise to enumerate the lectures here, e.g. 'Lecture 01: How to open a Text Editor'
 - `summary`: A short text to show in the in-Lecture overview bar, e.g. 'Common mistakes when using git'
+
+####Text
+- `codeHint`: This is a badly named text for the solution for the assignment. Use `markdown` here at your leisure.
+- `codeHintText`: This text should give the user a clue how to solve the assignment. Use `markdown` here.
+- `taskText`: The text containing instructions for finishing the assignment for this particular lecture. Again, `markdown` is supported.
+- `lectureText`: The actual text of the lecture. Any explaining should be done here. `markdown` is supported.
+
+#### Embedded Media
 - `embedType`: If a video should be embedded into the lecture, specify a type.
   - Currently supported: `"youtube"`
 - `videoUrl`: The URL that should be embedded. Make sure it is an embeddable URL. 
+
+####Assignment-specific options
 - `expectedResults`: This is highly experimental. Specify a String or an Object (w.i.p.) to test against for automatic assignment checking.
   - TODO: implement ruleset-support, implement regex support. 
 - `submitSuccess`: Message to show to the user when the submitted code was correct
@@ -46,6 +57,8 @@ The main file of a Koding Lecture is the `manifest.json` file. You will find an 
   - Currently supported: `coffee`, `javascript`, `ruby`, `python`, basically anything the Ace editor supports.
 - `code`: Code to show when the lesson starts. 
    - Please note: this is legacy logic, right now a file needs to be present in the `.kdlecture` directory. That file will then be loaded initially.
+
+####Preview-related options
 - `previewType`: WIP feature to use different preview types.
   - Currently supported: `code-preview`  
 - `execute`: The command to be executed when the user submits his code, e.g. "coffee lecture01.coffee -n"
@@ -53,8 +66,4 @@ The main file of a Koding Lecture is the `manifest.json` file. You will find an 
   - as a note to users: until we have an approval process, treat every `.kdlecture` as potentially intrusive code. Please check the manifest.json file carefully!
 - `files` : An array of files that belong to the lecture, e.g. `["lecture01.coffee"]`
   - for now, the first file will be shown. Further features are w.i.p.
-- `codeHint`: This is a badly named text for the solution for the assignment. Use `markdown` here at your leisure.
-- `codeHintText`: This text should give the user a clue how to solve the assignment. Use `markdown` here.
-- `taskText`: The text containing instructions for finishing the assignment for this particular lecture. Again, `markdown` is supported.
-- `lectureText`: The actual text of the lecture. Any explaining should be done here. `markdown` is supported.
-      
+   
