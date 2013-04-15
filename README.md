@@ -37,6 +37,10 @@ The main file of a Koding Lecture is the `manifest.json` file. You will find an 
 - `title`: The title of the Lecture. It is wise to enumerate the lectures here, e.g. 'Lecture 01: How to open a Text Editor'
 - `summary`: A short text to show in the in-Lecture overview bar, e.g. 'Common mistakes when using git'
 
+#### Origin Information
+- `originType`: How the course can/should be impoorted, here it would be `git`.
+- `originUrl`: The source where this course can be found.
+
 ####Text
 - `codeHint`: This is a badly named text for the solution for the assignment. Use `markdown` here at your leisure.
 - `codeHintText`: This text should give the user a clue how to solve the assignment. Use `markdown` here.
