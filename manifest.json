@@ -2,6 +2,8 @@
    "title":"CoffeeScript",
    "description":"This example course will introduce CoffeeScript",
    "path":"CoffeeScript.kdlecture",
+   "originUrl":"https://github.com/arvidkahl/CoffeeScript.kdlecture.git",
+   "originType":"git",
    "lectures":[
       {
          "title":"Lecture 1: What is CoffeeScript?",
