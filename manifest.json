@@ -1,16 +1,16 @@
 {
-   "title":"CoffeeScript 101",
-   "description":"This course will introduce CoffeeScript.",
-   "path":"coffee101.kdlecture",
+   "title":"CoffeeScript",
+   "description":"This example course will introduce CoffeeScript",
+   "path":"coffeescript.kdlecture",
    "lectures":[
       {
-         "title":"Lecture 1: What is CoffeeScript",
+         "title":"Lecture 1: What is CoffeeScript?",
          
          "embedType":"youtube",
          "videoUrl":"http://www.youtube.com/embed/fvsKkwbhfs8",
-         "summary":"In this lecture, you will learn about CoffeeScript.",
+         "summary":"This initial lecture will explain the history of CoffeeScript and the uses it has.",
          "expectedResults":"Hello World!",
-         "submitSuccess":"Well done! You can procedd to the next part.",
+         "submitSuccess":"Now, that was easy! The next lecture will show you how to loop over data.",
          "submitFailure":"This is not the statement we are looking for.",
          
          "language":"coffee",
@@ -19,9 +19,10 @@
          "previewType":"code-preview",        
          "execute": "coffee lecture01.coffee -n",
          "files" : ["lecture01.coffee"],
-         "codeHint":"Hit the button.",
-         "codeHintText":"There is nothign to see here",
-         "taskText":"Hi.wanna learn CoffeeScript?"
+         "codeHint":"The correct solution is \n ```coffee\nconsole.log 'Hello World!'\n```.",
+         "codeHintText":"To write to the console, use `console.log`. A string looks like this: `'a String'`.",
+         "taskText":"Find a way of writing `'Hello World!'` to the console.",
+         "lectureText":"This will contain instructive text."
       }
    ]
 }
