@@ -64,7 +64,11 @@ The main file of a Koding Lecture is the `manifest.json` file. You will find an 
 
 ####Preview-related options
 - `previewType`: WIP feature to use different preview types.
-  - Currently supported: `code-preview`  
+  - Currently supported: 
+    - `code-preview` - Will execute the command in `execute` and return the result as a string
+    - `execute-html` - Will show an `iframe` pointing to the file in `previewPath`, symlinked to the public koding webserver at a unique URL
+    - `terminal` - Will show a koding WebTerm terminal and pass the input from the file into the terminal when code is submitted 
+- `previewPath`: Used with the `execute-html` preview type
 - `execute`: The command to be executed when the user submits his code, e.g. "coffee lecture01.coffee -n"
   - **WARNING**: this code will run inside the users virtual machine (for now). Please make sure not to go haywire and execute malicious commands.
   - as a note to users: until we have an approval process, treat every `.kdlecture` as potentially intrusive code. Please check the manifest.json file carefully!
