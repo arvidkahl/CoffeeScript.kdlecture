@@ -31,6 +31,7 @@ The main file of a Koding Lecture is the `manifest.json` file. You will find an 
 - `description`: A short description of the Course, e.g. `This will teach you to avoid common mistakes when working with large codebases`
 - `path`: Filename of the Course, in this very case it's `CoffeeScript.kdlecture`
 - `lectures`: An array of objects, each representing a `Lecture` 
+- `author`: Your name, as a string, e.g. `Frodo Baggins`
 
 ### Lecture level values
 #### General Information
