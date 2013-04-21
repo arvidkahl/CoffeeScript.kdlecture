@@ -16,7 +16,7 @@
          "submitSuccess":"Now, that was easy! The next lecture will show you how to loop over data.",
          "submitFailure":"This is not the statement we are looking for.",
          
-         "language":"coffee",
+         "language":"coffeescript",
          "code":"console.log 'Hello World!'",
          
          "previewType":"code-preview",        
@@ -33,7 +33,7 @@
          "expectedResults":null,
          "submitSuccess":"Well done! You can procedd to the next part, where you will learn all more things.",
          "submitFailure":"This is not the statement we are looking for.",
-         "language":"sh",
+         "language":"shell",
          "code":"",
          "execute":"",
          "previewType":"terminal",
@@ -50,7 +50,7 @@
          "expectedResults":null,
          "submitSuccess":"Well done! You can procedd to the next part, where you will learn all more things.",
          "submitFailure":"This is not the statement we are looking for.",
-         "language":"coffee",
+         "language":"coffeescript",
          "code":"",
          "execute":"coffee lecture03.coffee -n > index.html",
          "previewType":"execute-html",
